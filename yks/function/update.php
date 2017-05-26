@@ -1,6 +1,8 @@
 <?php
 	include '../dbconn.php';
-	$sql = "select * from community_yks where idx = '{$_GET['idx']}'";
+	$num = $_GET['idx'];
+
+	$sql = "select * from community_yks where idx ='{$num}'";
 	$go = mysql_query($sql);
 ?>
 <!doctype html>
@@ -29,8 +31,8 @@
 						<input type="password" class="password" name="password" placeholder="비밀번호를 입력하세요">
 						<textarea class="textar" name="text" placeholder="내용을 입력해 주세요."><?=$re['text']?></textarea>
 
-						<button type="submit" class="write_btn">수정</button>
-						<a href="../index.php" class="write_btn">취소</a>
+						<button type="submit" class="write_btn" id="wrbt">수정</button>
+						<a href="./view.php?idx=<?=$num?>" class="write_btn">취소</a>
 					</form>
 					<?php
 						}	

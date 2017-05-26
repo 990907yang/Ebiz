@@ -51,12 +51,9 @@ $(document).ready(function(){
 			$(".textar").focus();
 			return false;
 		}
-		else{
-			alert("글쓰기가 완료되었습니다.");
-		}
 	});
 
-	var re_id = /^[a-z0-9_-]{4,20}$/; //아이디 정규식
+	var re_id =  /[0-9a-zA-Z]/; //아이디 정규식
 	var re_pw = /^[a-z0-9_-]{6,18}$/; // 비밀번호 정규식
 	var re_email = /^([\w\.-]+)@([a-z\d\.-]+)\.([a-z\.]{2,6})$/; // 이메일 검사식
 
@@ -68,15 +65,15 @@ $(document).ready(function(){
 
 	form.submit(function(){
 		if(re_id.test(uid.val()) != true){
-			alert("[ID 입력 오류] 4자 이상의 아이디를 입력해 주세요.");
+			alert("아이디를 제대로 입력해 주세요.");
 			uid.focus();
 			return false;
 		}else if(re_pw.test(upw.val()) != true){
-			alert("[PW 입력 오류] 6자 이상의 비밀번호를 입력해 주세요.");
+			alert("비밀번호를 제대로 입력해 주세요.");
 			upw.focus();
 			return false;
 		}else if(re_email.test(uemail.val()) != true){
-			alert("[EMAIL 입력 오류] @를 포함한 올바른 이메일을 입력해 주세요.");
+			alert("이메일을 제대로 입력해 주세요.");
 			uemail.focus();
 			return false;
 		}
@@ -92,4 +89,11 @@ $(document).ready(function(){
 			$("#id_ck").append(data);
 		});
 	}
+	$(".sign_up_btn").click(function(){
+		if($(".s_name").val().replace(/\s/g,"").length == 0){
+			alert("이름을 입력해주세요.");
+			$(".s_name").focus();
+			return false;
+		}
+	});
 });;

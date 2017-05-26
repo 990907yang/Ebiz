@@ -1,6 +1,3 @@
-<?php
-	include '../dbconn.php';
-?>
 <!doctype html>
 <html lang="ko">
 <head>

@@ -17,7 +17,13 @@
 			<h2>SIGN IN</h2>
 
 			<div class="sign_in_table">
-				
+				<form action="./sign_in_ok.php" method="post">
+					<div class="sign_box">
+						<input type="text" name="id" placeholder="ID">
+						<input type="password" name="password" placeholder="PASSWORD">
+					</div>
+					<button class="sign_in_btn">로그인</button>
+				</form>
 			</div>
 		</section>
 		<footer id="footer"></footer>

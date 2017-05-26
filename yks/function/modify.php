@@ -1,8 +1,11 @@
 <?php
 	include "../dbconn.php";
+	echo "<meta charset='UTF-8'>";
 
 	$sql_sel =  "select * from community_yks where idx='{$_GET['idx']}'";
 	$go_sel = mysql_query($sql_sel);
+
+	$num = $_GET['idx'];
 
 	$pass = $_POST['password'];
 
@@ -22,7 +25,7 @@
 			?>
 			<script>
 				alert('비밀번호가 일치 하지 않습니다.');
-				location.href='./update.php?idx=<?=$result['idx']?>';
+				location.href='./update.php?idx=<?=$num?>';
 			</script>
 			<?php
 		}

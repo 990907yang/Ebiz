@@ -1,6 +1,8 @@
 <?php
 	include '../dbconn.php';
-	$sql = "select * from community_yks where idx='{$_GET['idx']}'";
+	$num = $_GET['idx'];
+
+	$sql = "select * from community_yks where idx='{$num}'";
 	$result = mysql_query($sql);
 ?>
 <!doctype html>
@@ -26,9 +28,10 @@
 					<p>비밀번호 확인 후 게시글 삭제가 가능합니다.</p>
 					<input type="password" name="pass_ok" class="del_in">
 					<button class="del_btn">삭제하기</button>
+					<a href="./view.php?idx=<?=$num?>"><span class="del_btn">취소</span></a>
 				</form>
 				<?php
-			}	
+			}
 			?>
 			</div>
 		</section>
