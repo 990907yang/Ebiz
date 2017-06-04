@@ -1,5 +1,5 @@
 <?php
-	include_once "../../dbconn.php";
+	include "../../dbconn.php";
 
 	$sql = "select * from member_yks where id='{$_POST['id']}'";
 

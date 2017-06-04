@@ -7,6 +7,7 @@ li { list-style: none; }
 a { text-decoration: none; }
 span { display: inline-block; }
 button { border: 0; }
+h2 { text-align:center; padding-top: 30px; }
 
 /*html,body*/
 html,body { width: 100%; height: 100%; }
@@ -18,11 +19,11 @@ html,body { width: 100%; height: 100%; }
 #header {  }
 
 
-/* community */
-h2 { text-align:center; padding-top: 30px; }
-.table { box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); max-height: 550px; overflow: hidden; }
-.board { width: 1000px; margin:  0 auto; margin-top: 100px; margin-bottom: 50px; }
+/* index page */
+.board { width: 1000px; margin:  0 auto; margin-top: 50px; margin-bottom: 50px; position: relative; }
+.table { box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
 
+.wel_msg { width: 300px; height: 40px; font-size: 1.1em; text-align: center; margin: 0 auto; margin-bottom: 10px; line-height: 40px; }
 .gsp_header > ul li { float: left; }
 
 .table ul { border: 1px solid #ddd; height: 50px; line-height: 45px; }
@@ -30,25 +31,33 @@ h2 { text-align:center; padding-top: 30px; }
 
 .table li { float: left; text-align: center; }
 .table ul li:nth-child(1) { width: 100px; }
-.table ul li:nth-child(2) { width: 600px; }
-.title_box { width: 600px; height: 40px; }
-.table ul li:nth-child(3) { width: 110px; }
+.table ul li:nth-child(2) { width: 610px; }
+.title_box { width: 570px; height: 40px; }
+.table ul li:nth-child(3) { width: 100px; }
 .writer_box { width: 110px; height: 40px; }
 .table ul li:nth-child(4) { width: 180px; }
 
-.num,.v_num,.title,.v_title,.writer,.v_writer,.count,.v_count { overflow: hidden; text-overflow:ellipsis; white-space:nowrap; }
+.num,.v_num,.title_box,.v_title,.writer_box,.v_writer,.count,.v_count { overflow: hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+.search_form { width: 300px; height: 70px; }
+.search { position: absolute; width: 130px; height: 40px; margin-top: 30px; }
+.search_btn { position: absolute; width: 50px; height: 40px; margin-top: 30px; left: 220px; background: #ddd; font-weight: bold; font-size: 1em; }
+.search_btn:hover { background: #999; }
+.search_sel { width: 70px; height: 40px; margin-top: 30px; margin-right: 10px; }
+
+.all_btn { width: 200px; height: 40px; position: absolute; right: 0; bottom: 0; }
 
 /* write_btn */
-.write_btn { width: 80px; height: 40px; margin-left: 20px; background: #ddd; text-align: center; line-height: 40px; float: right; margin-top: 30px; font-weight: bold; font-size: 1.1em; cursor: pointer; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
+.write_btn { width: 80px; height: 40px; margin-left: 20px; background: #ddd; text-align: center; line-height: 40px; float: right; font-weight: bold; font-size: 1em; cursor: pointer; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
 .write_btn:hover { background: #999; }
 
 /* write_page */
 .writing { width: 1000px; height: 400px; border:1px solid #ddd; background: #eeeeee; border-radius:10px; }
 .writing > form input { border:1px solid #ddd; border-radius:4px; }
-.writing > form input:nth-child(1) { width: 480px; height: 40px; margin-left: 10px; }
+.writing > form input:nth-child(1) { width: 760px; height: 40px; margin-left: 10px; }
 .writing > form input:nth-child(2) { width: 200px; height: 40px; margin: 10px;}
-.writing > form input:nth-child(3) { width: 265px; height: 40px; }
-.textar { width: 975px; height: 315px; margin: 10px 10px; border: 1px solid #ddd; border-radius:3px; margin-bottom: 15px;}
+.textar { width: 975px; height: 280px; margin: 10px 10px; border: 1px solid #ddd; border-radius:3px; margin-bottom: 10px;}
+#file_box { width: 300px; height: 26px; border: 1px solid #000; margin-bottom: 20px;}
 
 /* view page */
 .view { width: 1000px; min-height: 350px; border:1px solid #ddd; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
@@ -59,6 +68,7 @@ h2 { text-align:center; padding-top: 30px; }
 .view > div:nth-child(4) { width: 90px; height: 40px; line-height: 40px; }
 .view > div:nth-child(5) { width: 975px; min-height: 300px; margin-left: 10px; margin-bottom: 10px; }
 
+.v_text { word-wrap: break-word; }
 /* delete page */
 .del_btn { width: 80px; height: 40px; margin: 0 auto; margin-left: 20px; background: #ddd; text-align: center; line-height: 40px; margin-top: 30px; font-weight: bold; font-size: 1.1em; cursor: pointer; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
 .del_btn:hover { background: #999; }
@@ -82,3 +92,25 @@ h2 { text-align:center; padding-top: 30px; }
 .sign_in_btn:hover { background: #999; }
 
 .sign_box { width: 180px; height: 70px; display: inline-block; margin: 10px 10px; }
+
+/* view list */
+.view_list { width: 1000px; min-Height: 250px; margin: 0 auto; line-height: 40px; margin-bottom: 30px; }
+.vlist { border: 1px solid #ddd; }
+.view_list li { float: left; text-align: center; }
+.view_list ul li:nth-child(1) { width: 100px; }
+.view_list ul li:nth-child(2) { width: 600px; }
+.title_box { width: 600px; height: 40px; }
+.view_list ul li:nth-child(3) { width: 110px; }
+.writer_box { width: 110px; height: 40px; }
+.view_list ul li:nth-child(4) { width: 180px; }
+
+.select { background: #ddd; }
+
+/* paging */
+.paging { width: 405px; height: 40px; position: absolute; right: 0; left: 0; margin: 0 auto; margin-top: 30px; }
+.paging > ul li { float: left; width: 35px; margin: 5px; text-align: center; }
+.current { font-size: 1.1em; color: #000; }
+
+/* list_paging */
+.list_paging { width: 405px; height: 40px; position: absolute; right: 0; left: 0; margin: 0 auto; }
+.list_paging > ul li { float: left; width: 35px; margin: 5px; text-align: center; }

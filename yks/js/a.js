@@ -69,7 +69,7 @@ $(document).ready(function(){
 			uid.focus();
 			return false;
 		}else if(re_pw.test(upw.val()) != true){
-			alert("비밀번호를 제대로 입력해 주세요.");
+			alert("비밀번호는 6자이상으로 입력해 주세요.");
 			upw.focus();
 			return false;
 		}else if(re_email.test(uemail.val()) != true){
