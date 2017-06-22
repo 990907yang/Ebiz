@@ -28,9 +28,10 @@
 					<form action="./modify.php?idx=<?=$re['idx']?>" method="post" name="w_form">
 						<input type="text" class="title" name="title" placeholder="제목" value="<?=$re['title']?>">
 						<input type="text" class="writer"name="writer" placeholder="작성자" value="<?=$re['writer']?>">
-						<input type="password" class="password" name="password" placeholder="비밀번호를 입력하세요">
 						<textarea class="textar" name="text" placeholder="내용을 입력해 주세요."><?=$re['text']?></textarea>
-
+						<div class="file_up">
+							<input type="file" name="upload" id="file_box" class="fiel_up">
+						</div>
 						<button type="submit" class="write_btn" id="wrbt">수정</button>
 						<a href="./view.php?idx=<?=$num?>" class="write_btn">취소</a>
 					</form>

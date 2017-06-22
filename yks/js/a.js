@@ -38,17 +38,13 @@ $(document).ready(function(){
 			alert("제목을 입력해주세요.");
 			$(".title").focus();
 			return false;
-		}else if($(".writer").val().replace(/\s/g,"").length == 0){
-			alert("작성자를 입력해주세요.");
-			$(".writer").focus();
-			return false;
-		}else if($(".password").val().replace(/\s/g,"").length == 0){
-			alert("비밀번호를 입력해주세요.");
-			$(".password").focus();
-			return false;
 		}else if($(".textar").val().replace(/\s/g,"").length == 0){
 			alert("내용을 입력해주세요.");
 			$(".textar").focus();
+			return false;
+		}else if($(".search").val().replace(/\s/g,"").length == 0){
+			alert("검색어를 입력해주세요.");
+			$(".search").focus();
 			return false;
 		}
 	});
@@ -96,4 +92,5 @@ $(document).ready(function(){
 			return false;
 		}
 	});
+
 });;

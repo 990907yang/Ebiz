@@ -1,5 +1,8 @@
 <?php
 	include './dbconn.php';
+	
+	$ser = explode(".", $_SERVER["REMOTE_ADDR"]);
+	echo $ser[0].".".$ser[1].".".$ser[2].".".$ser[3];
 
 	$field = empty($_GET['field']) ? "" : $_GET['field']; // field 값이 없다면 ? ""공백을 넣고 있다면 : 넣는다
 	$value = empty($_GET['value']) ? "" : $_GET['value'];
@@ -93,6 +96,7 @@
 </head>
 <body>
 	<div class="wrap">
+		<script type="text/javascript" src="http://static.dagame.co.kr/js/gnb.js"></script>
 		<header id="header"></header>
 		<section id="section">
 			<h2>COMMUNITY</h2>
@@ -115,7 +119,7 @@
 					?>
 						<ul class="list">
 							<li class="num"><?=$idx?></li>
-							<li class="title"><div class="title_box"><a href="./function/view.php?idx=<?=$row['idx']?>"><?=$row['title']?></a></div></li>
+							<li class="title"><div class="title_box"><a href="./function/view.php?idx=<?=$row['idx']?>&page=<?=$page?>"><?=$row['title']?></a></div></li>
 							<li class="writer"><div class="writer_box"><?=$row['writer']?></div></li>
 							<li class="count"><?=$row['count']?></li>
 						</ul>

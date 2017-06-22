@@ -19,15 +19,15 @@
 
 			<div class="board">
 				<div class="writing">
-					<form action="./insert.php" method="post" enctype="multipart/form-data">
+					<form action="http://www.nolzzang.com/home/board/syndi_new/yks_insert.php" method="post" enctype="multipart/form-data">
 
 						<input type="text" class="title" name="title" placeholder="제목">
 						<input type="text" class="writer" name="writer" value="<?=$user_name?>" readonly>
 						<textarea class="textar" name="text" placeholder="내용을 입력해 주세요." wrap="soft"></textarea>
 						<div class="file_up">
-							<input type="file" name="image_test" id="file_box" class="fiel_up">
+							<input type="file" name="upload" id="file_box" class="fiel_up">
 						</div>
-						<button type="submit" id="wrbt" class="write_btn" onclick="check()">글쓰기</button>
+						<button type="submit" id="wrbt" class="write_btn fiy">글쓰기</button>
 						<a href="../index.php" class="write_btn">취소</a>
 					</form>
 				</div>

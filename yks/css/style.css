@@ -60,13 +60,15 @@ html,body { width: 100%; height: 100%; }
 #file_box { width: 300px; height: 26px; border: 1px solid #000; margin-bottom: 20px;}
 
 /* view page */
-.view { width: 1000px; min-height: 350px; border:1px solid #ddd; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
+.view { width: 1000px; min-height: 350px; border:1px solid #ddd; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); margin-bottom: 20px;}
 .view > div{ float: left; border:1px solid #ddd; border-radius:4px; margin-top: 10px; }
 .view > div:nth-child(1) { width: 50px; height: 40px; margin-left: 10px; text-align: center; line-height: 40px; }
 .view > div:nth-child(2) { width:600px; height: 40px; margin-left: 10px; line-height: 40px; }
 .view > div:nth-child(3) { width: 205px; height: 40px; margin: 10px; line-height: 40px; }
 .view > div:nth-child(4) { width: 90px; height: 40px; line-height: 40px; }
-.view > div:nth-child(5) { width: 975px; min-height: 300px; margin-left: 10px; margin-bottom: 10px; }
+.view > div:nth-child(5) { width: 670px; min-height: 300px; margin-left: 10px; margin-bottom: 10px; }
+.view > div:nth-child(6) { width: 300px; height: 300px; margin-left: 10px; margin-bottom: 10px; }
+.upimg { width: auto; height: auto; max-width: 300px; max-height: 300px; }
 
 .v_text { word-wrap: break-word; }
 /* delete page */
@@ -85,7 +87,7 @@ html,body { width: 100%; height: 100%; }
 .sign_up_btn { width: 80px; height: 40px; position: absolute; right: 0;  bottom: -70px; background: #ddd; line-height: 40px; font-weight: bold; font-size: 1.1em; cursor: pointer; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
 .sign_up_btn:hover { background: #999; }
 
-/* sign_in_btn */
+/* sign_in */
 .sign_in_table { width: 300px;  height: 100px; position: relative; margin: 0 auto; border: 1px solid #ddd; margin-top: 50px; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
 .sign_in_table > form input { width: 180px; height: 30px; margin-top: 5px; }
 .sign_in_btn { width: 80px; height: 65px; display: inline-block; position: absolute; top: 15px; background: #ddd; line-height: 40px; font-weight: bold; font-size: 1.1em; cursor: pointer; box-shadow: 1px 2px 5px 0px rgba(0,0,0,.2); }
@@ -109,8 +111,8 @@ html,body { width: 100%; height: 100%; }
 /* paging */
 .paging { width: 405px; height: 40px; position: absolute; right: 0; left: 0; margin: 0 auto; margin-top: 30px; }
 .paging > ul li { float: left; width: 35px; margin: 5px; text-align: center; }
-.current { font-size: 1.1em; color: #000; }
+.current { font-size: 1.1em; color: #000; font-weight: bold; }
 
 /* list_paging */
-.list_paging { width: 405px; height: 40px; position: absolute; right: 0; left: 0; margin: 0 auto; }
+.list_paging { width: 635px; height: 40px; position: absolute; right: 0; left: 0; margin: 0 auto; margin-bottom: 30px; }
 .list_paging > ul li { float: left; width: 35px; margin: 5px; text-align: center; }
